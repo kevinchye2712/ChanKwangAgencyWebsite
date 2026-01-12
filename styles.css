@@ -1,0 +1,92 @@
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navigation Styles */
+.nav-link {
+    position: relative;
+    color: #475569;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #C5A059;
+}
+
+.nav-link.active {
+    color: #0F172A;
+}
+
+/* Animated Underline */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #C5A059;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* General UI */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Modal Animation */
+.modal-animate {
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* WhatsApp Floating Button - Static Version */
+.whatsapp-float {
+    background-color: #25D366;
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    /* Darker green on hover */
+    transform: translateY(-5px);
+    /* Moves up slightly */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    /* Adds a deeper shadow */
+}

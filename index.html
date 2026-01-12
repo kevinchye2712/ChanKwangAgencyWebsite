@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chan Kwang Agency | Insurance Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-firm-light text-slate-800 font-sans overflow-x-hidden">
+
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 h-24 flex justify-between items-center relative z-50 bg-white">
+
+            <a href="#" class="flex flex-col group">
+                <span
+                    class="text-2xl font-serif font-bold text-firm-navy tracking-wide group-hover:text-firm-gold transition duration-300">CHAN
+                    KWANG</span>
+                <span class="text-[10px] uppercase tracking-[0.2em] text-firm-gold font-bold">Insurance Agency</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 text-sm items-center">
+                <a href="#services" class="nav-link" data-target="services">Expertise</a>
+                <a href="#testimonials" class="nav-link" data-target="testimonials">Testimonials</a>
+                <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+                <a href="#careers" class="nav-link" data-target="careers">Join Us</a>
+            </div>
+
+            <a href="#contact"
+                class="hidden md:block bg-firm-navy text-white px-6 py-2.5 rounded hover:bg-slate-800 transition font-bold text-sm uppercase shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-300">
+                Get Protected
+            </a>
+
+            <button id="mobile-menu-btn"
+                class="md:hidden text-firm-navy text-2xl focus:outline-none hover:text-firm-gold transition">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-white pt-32 px-6">
+            <div class="flex flex-col space-y-6 text-center">
+                <a href="#services"
+                    class="mobile-link text-xl font-serif font-bold text-firm-navy hover:text-firm-gold py-2 border-b border-gray-100 transition">Expertise</a>
+                <a href="#testimonials"
+                    class="mobile-link text-xl font-serif font-bold text-firm-navy hover:text-firm-gold py-2 border-b border-gray-100 transition">Stories</a>
+                <a href="#contact"
+                    class="mobile-link text-xl font-serif font-bold text-firm-navy hover:text-firm-gold py-2 border-b border-gray-100 transition">Contact
+                    Us</a>
+                <a href="#careers"
+                    class="mobile-link text-xl font-serif font-bold text-firm-navy hover:text-firm-gold py-2 border-b border-gray-100 transition">Join
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-firm-navy h-[650px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                class="object-cover w-full h-full" alt="Consultation">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-firm-navy via-firm-navy/95 to-transparent"></div>
+        <div class="container mx-auto px-6 relative z-10 fade-in-up">
+            <div class="max-w-3xl">
+                <div class="inline-block border-l-4 border-firm-gold pl-4 mb-6">
+                    <p class="text-firm-gold font-bold uppercase tracking-widest text-sm">Insurance Agency</p>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-serif font-bold text-white leading-tight mb-6">
+                    Securing your today,<br>
+                    Planning your <span class="italic text-firm-gold">generations.</span>
+                </h1>
+                <p class="text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl font-light">
+                    We bridge the gap between risk protection, wealth distribution, and financial planning. A holistic
+                    approach for families and businesses.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact"
+                        class="bg-firm-gold text-white px-8 py-4 rounded font-bold shadow-lg hover:bg-yellow-600 transition text-center hover:scale-105 duration-300">Request
+                        Proposal</a>
+                    <a href="#careers"
+                        class="border border-white text-white px-8 py-4 rounded font-bold hover:bg-white hover:text-firm-navy transition text-center hover:scale-105 duration-300">Join
+                        Our Team</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-12 bg-slate-50 border-b border-gray-100">
+        <div class="container mx-auto px-6">
+            <p class="text-center text-xs font-bold text-slate-400 uppercase tracking-widest mb-8">Authorized
+                Representatives For</p>
+
+            <div class="flex justify-center items-center">
+                <img src="great-eastern-logo.png"
+                    class="h-16 w-auto object-contain hover:scale-105 transition-transform duration-300"
+                    alt="Great Eastern">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="pt-16 pb-24 bg-white scroll-mt-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-firm-navy mb-4">Comprehensive Wealth Coverage
+                </h2>
+                <div class="w-24 h-1 bg-firm-gold mx-auto"></div>
+                <p class="mt-4 text-slate-500 max-w-2xl mx-auto">
+                    Click on any service below to explore how we structure your wealth.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div onclick="openModal('risk')"
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        <i class="fas fa-shield-alt text-6xl"></i>
+                    </div>
+                    <div
+                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Risk Management</h3>
+                    <p class="text-sm text-slate-500 mb-4">Identifying gaps in life, medical, and business coverage
+                        before they become liabilities.</p>
+                    <span
+                        class="text-xs font-bold text-firm-gold uppercase tracking-wider flex items-center group-hover:text-firm-navy transition-colors">
+                        View Details <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </div>
+
+                <div onclick="openModal('estate')"
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        <i class="fas fa-scroll text-6xl"></i>
+                    </div>
+                    <div
+                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Estate Planning</h3>
+                    <p class="text-sm text-slate-500 mb-4">Creating instant liquidity for inheritance tax, trusts, and
+                        family maintenance.</p>
+                    <span
+                        class="text-xs font-bold text-firm-gold uppercase tracking-wider flex items-center group-hover:text-firm-navy transition-colors">
+                        View Details <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </div>
+
+                <div onclick="openModal('finance')"
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        <i class="fas fa-university text-6xl"></i>
+                    </div>
+                    <div
+                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Banking & Finance</h3>
+                    <p class="text-sm text-slate-500 mb-4">Mortgage cancellation (MLTA) and debt protection strategies
+                        for properties.</p>
+                    <span
+                        class="text-xs font-bold text-firm-gold uppercase tracking-wider flex items-center group-hover:text-firm-navy transition-colors">
+                        View Details <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </div>
+
+                <div onclick="openModal('tax')"
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        <i class="fas fa-calculator text-6xl"></i>
+                    </div>
+                    <div
+                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Tax Planning</h3>
+                    <p class="text-sm text-slate-500 mb-4">Leveraging Keyman insurance and PRS for maximum corporate and
+                        personal tax relief.</p>
+                    <span
+                        class="text-xs font-bold text-firm-gold uppercase tracking-wider flex items-center group-hover:text-firm-navy transition-colors">
+                        View Details <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </div>
+
+                <div onclick="openModal('wealth')"
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        <i class="fas fa-chart-line text-6xl"></i>
+                    </div>
+                    <div
+                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Investment Planning</h3>
+                    <p class="text-sm text-slate-500 mb-4">Diversified investment-linked funds managed by top-tier fund
+                        houses.</p>
+                    <span
+                        class="text-xs font-bold text-firm-gold uppercase tracking-wider flex items-center group-hover:text-firm-navy transition-colors">
+                        View Details <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </div>
+
+                <div onclick="openModal('legal')"
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        <i class="fas fa-gavel text-6xl"></i>
+                    </div>
+                    <div
+                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Legal & Tax Advisory</h3>
+                    <p class="text-sm text-slate-500 mb-4">Buy-Sell agreements, contract reviews, and trust
+                        documentation support.</p>
+                    <span
+                        class="text-xs font-bold text-firm-gold uppercase tracking-wider flex items-center group-hover:text-firm-navy transition-colors">
+                        View Details <i
+                            class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials"
+        class="py-24 bg-gradient-to-br from-slate-950 to-slate-700 scroll-mt-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.03]"
+            style="background-image: radial-gradient(#C5A059 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <p class="text-firm-gold font-bold uppercase tracking-widest text-xs mb-2">Stories of Trust</p>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">What Our Clients Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-8 rounded-xl relative hover:shadow-2xl hover:-translate-y-2 transition duration-300 group overflow-hidden">
+                    <p class="text-slate-600 italic mb-6 relative z-10 leading-relaxed">"Chan Kwang showed me how to use
+                        Keyman Insurance to <strong class="text-firm-navy">reduce my corporate tax</strong> while
+                        protecting my partners."</p>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div
+                            class="w-10 h-10 bg-firm-navy rounded-full text-white flex items-center justify-center font-bold text-sm">
+                            DK</div>
+                        <div>
+                            <p class="font-bold text-firm-navy text-sm">Datuk Kamil</p>
+                            <p class="text-xs text-firm-gold uppercase">SME Director</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-xl relative hover:shadow-2xl hover:-translate-y-2 transition duration-300 group overflow-hidden">
+                    <p class="text-slate-600 italic mb-6 relative z-10 leading-relaxed">"They didn't just process the
+                        claim; they helped me with the <strong class="text-firm-navy">trust setup</strong> when the
+                        banks were confusing me."</p>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div
+                            class="w-10 h-10 bg-firm-navy rounded-full text-white flex items-center justify-center font-bold text-sm">
+                            SM</div>
+                        <div>
+                            <p class="font-bold text-firm-navy text-sm">Sarah M.</p>
+                            <p class="text-xs text-firm-gold uppercase">Beneficiary</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-xl relative hover:shadow-2xl hover:-translate-y-2 transition duration-300 group overflow-hidden">
+                    <p class="text-slate-600 italic mb-6 relative z-10 leading-relaxed">"They fixed my <strong
+                            class="text-firm-navy">property debt structure</strong> first. They are financial
+                        consultants, not just salesmen."</p>
+                    <div class="flex items-center gap-4 border-t border-gray-100 pt-4 relative z-10">
+                        <div
+                            class="w-10 h-10 bg-firm-navy rounded-full text-white flex items-center justify-center font-bold text-sm">
+                            AJ</div>
+                        <div>
+                            <p class="font-bold text-firm-navy text-sm">Alvin J.</p>
+                            <p class="text-xs text-firm-gold uppercase">Investor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-firm-light scroll-mt-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-2/5 bg-firm-navy text-white p-10 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-serif font-bold mb-6">Get in Touch</h3>
+                        <p class="text-slate-300 text-sm mb-8">Looking for a comprehensive policy review?</p>
+                        <ul class="space-y-6">
+                            <li class="flex items-center"><i class="fas fa-phone-alt text-firm-gold mr-4"></i>03-5555
+                                8888</li>
+                            <li class="flex items-center"><i
+                                    class="fas fa-envelope text-firm-gold mr-4"></i>inquiry@chankwang.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-3/5 p-10">
+                    <h3 class="text-2xl font-serif font-bold text-firm-navy mb-6">Request Consultation</h3>
+                    <form class="grid grid-cols-1 gap-6">
+                        <input type="text" placeholder="Name"
+                            class="w-full bg-slate-50 border border-slate-200 p-3 rounded focus:border-firm-navy outline-none">
+                        <select
+                            class="w-full bg-slate-50 border border-slate-200 p-3 rounded focus:border-firm-navy outline-none text-slate-600">
+                            <option>Comprehensive Policy Review</option>
+                            <option>Business/Keyman Insurance</option>
+                            <option>Estate Planning & Trusts</option>
+                        </select>
+                        <textarea rows="3" placeholder="Message"
+                            class="w-full bg-slate-50 border border-slate-200 p-3 rounded focus:border-firm-navy outline-none"></textarea>
+                        <button
+                            class="w-full bg-firm-gold text-white font-bold py-4 rounded hover:bg-yellow-600 transition shadow-lg">Send
+                            Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="careers" class="py-20 bg-firm-navy text-white relative scroll-mt-24 overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-slate-800 opacity-50 hidden lg:block skew-x-12 transform origin-top-right">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <div class="lg:w-1/2 pt-10">
+                    <div
+                        class="inline-block bg-firm-gold text-firm-navy px-3 py-1 text-xs font-bold uppercase tracking-widest mb-6">
+                        Join The Team</div>
+                    <h2 class="text-4xl font-serif font-bold mb-6">Build a Career, Not Just a Client List.</h2>
+                    <p class="text-slate-300 text-lg leading-relaxed mb-8">
+                        Most agencies teach you how to sell policies. At Chan Kwang, you will master legal structures,
+                        tax optimization, and estate planning.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div
+                                class="w-10 h-10 rounded-full bg-firm-gold flex items-center justify-center text-firm-navy font-bold mr-4">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">Professional Mentorship</h4>
+                                <p class="text-sm text-slate-400">Direct coaching from industry leaders in finance and
+                                    law.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div
+                                class="w-10 h-10 rounded-full bg-firm-gold flex items-center justify-center text-firm-navy font-bold mr-4">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">Premier Commission Structure</h4>
+                                <p class="text-sm text-slate-400">Industry-leading compensation with passive income
+                                    renewal models.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-white text-slate-800 p-8 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-serif font-bold text-firm-navy mb-2">Apply Now</h3>
+                        <form class="mt-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <input type="text" placeholder="Full Name"
+                                    class="w-full bg-slate-50 border border-slate-200 p-3 rounded focus:border-firm-navy outline-none">
+                                <input type="text" placeholder="Mobile"
+                                    class="w-full bg-slate-50 border border-slate-200 p-3 rounded focus:border-firm-navy outline-none">
+                            </div>
+                            <input type="email" placeholder="Email"
+                                class="w-full bg-slate-50 border border-slate-200 p-3 rounded focus:border-firm-navy outline-none mb-6">
+                            <div
+                                class="border-2 border-dashed border-slate-300 rounded-lg p-6 text-center hover:bg-slate-50 transition cursor-pointer mb-6">
+                                <i class="fas fa-cloud-upload-alt text-3xl text-slate-300 mb-2"></i>
+                                <p class="text-sm text-slate-600 font-bold">Upload CV</p>
+                                <p class="text-xs text-slate-400">PDF max 5MB</p>
+                            </div>
+                            <button
+                                class="w-full bg-firm-navy text-white font-bold py-4 rounded hover:bg-slate-800 transition shadow-lg">Submit
+                                Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-slate-200 pt-10 pb-6">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0"><span
+                    class="text-lg font-serif font-bold text-firm-navy">CHAN KWANG</span>
+                <p class="text-xs text-slate-400 mt-1">Authorized Agency Representative</p>
+            </div>
+            <div class="text-xs text-slate-400">&copy; 2026 Chan Kwang Agency. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <div id="service-modal" class="hidden fixed inset-0 z-[60] overflow-y-auto" aria-labelledby="modal-title"
+        role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-slate-900 bg-opacity-75 transition-opacity backdrop-blur-sm"
+            onclick="closeModal()"></div>
+        <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+            <div
+                class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg modal-animate border-t-4 border-firm-gold">
+                <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div
+                            class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-firm-light sm:mx-0 sm:h-10 sm:w-10 text-firm-navy">
+                            <i id="modal-icon" class="fas fa-info-circle text-xl"></i>
+                        </div>
+                        <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left w-full">
+                            <h3 class="text-xl font-serif font-bold leading-6 text-firm-navy" id="modal-title">Title
+                            </h3>
+                            <div class="mt-4">
+                                <p class="text-sm text-slate-500 mb-4" id="modal-desc">Desc</p>
+                                <ul class="text-sm text-slate-600 space-y-2 bg-slate-50 p-4 rounded-lg" id="modal-list">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                    <button type="button"
+                        class="inline-flex w-full justify-center rounded-md bg-firm-navy px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 sm:ml-3 sm:w-auto"
+                        onclick="location.href='#contact'; closeModal()">Consult An Agent</button>
+                    <button type="button"
+                        class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
+                        onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<a href="https://wa.me/60123456789?text=Hi%20Chan%20Kwang%20Agency..." target="_blank"
+    class="fixed bottom-5 right-5 z-[100] w-12 h-12 rounded-full flex items-center justify-center text-white shadow-lg whatsapp-float"
+    aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+</a>
+</body>
+
+</html>
