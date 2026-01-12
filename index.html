@@ -103,26 +103,30 @@
         </div>
     </section>
 
-    <section id="services" class="pt-16 pb-24 bg-white scroll-mt-24">
-        <div class="container mx-auto px-6">
+    <section id="services"
+        class="pt-16 pb-24 bg-gradient-to-br from-slate-950 to-slate-700 scroll-mt-24 relative overflow-hidden">
+
+        <div class="absolute inset-0 opacity-[0.03]"
+            style="background-image: radial-gradient(#C5A059 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
             <div class="text-center mb-20">
-                <h2 class="text-3xl md:text-4xl font-serif font-bold text-firm-navy mb-4">Comprehensive Wealth Coverage
-                </h2>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Comprehensive Wealth Coverage</h2>
                 <div class="w-24 h-1 bg-firm-gold mx-auto"></div>
-                <p class="mt-4 text-slate-500 max-w-2xl mx-auto">
+                <p class="mt-4 text-slate-300 max-w-2xl mx-auto">
                     Click on any service below to explore how we structure your wealth.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div onclick="openModal('risk')"
-                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden rounded-lg">
                     <div
-                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        class="absolute top-0 right-0 p-4 text-slate-200 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
                         <i class="fas fa-shield-alt text-6xl"></i>
                     </div>
                     <div
-                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        class="w-16 h-16 bg-firm-navy text-firm-gold rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300 shadow-lg">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Risk Management</h3>
@@ -136,13 +140,13 @@
                 </div>
 
                 <div onclick="openModal('estate')"
-                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden rounded-lg">
                     <div
-                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        class="absolute top-0 right-0 p-4 text-slate-200 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
                         <i class="fas fa-scroll text-6xl"></i>
                     </div>
                     <div
-                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        class="w-16 h-16 bg-firm-navy text-firm-gold rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300 shadow-lg">
                         <i class="fas fa-scroll"></i>
                     </div>
                     <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Estate Planning</h3>
@@ -156,13 +160,13 @@
                 </div>
 
                 <div onclick="openModal('finance')"
-                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden rounded-lg">
                     <div
-                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        class="absolute top-0 right-0 p-4 text-slate-200 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
                         <i class="fas fa-university text-6xl"></i>
                     </div>
                     <div
-                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        class="w-16 h-16 bg-firm-navy text-firm-gold rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300 shadow-lg">
                         <i class="fas fa-university"></i>
                     </div>
                     <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Banking & Finance</h3>
@@ -176,13 +180,13 @@
                 </div>
 
                 <div onclick="openModal('tax')"
-                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden rounded-lg">
                     <div
-                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        class="absolute top-0 right-0 p-4 text-slate-200 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
                         <i class="fas fa-calculator text-6xl"></i>
                     </div>
                     <div
-                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        class="w-16 h-16 bg-firm-navy text-firm-gold rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300 shadow-lg">
                         <i class="fas fa-calculator"></i>
                     </div>
                     <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Tax Planning</h3>
@@ -196,13 +200,13 @@
                 </div>
 
                 <div onclick="openModal('wealth')"
-                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden rounded-lg">
                     <div
-                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        class="absolute top-0 right-0 p-4 text-slate-200 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
                         <i class="fas fa-chart-line text-6xl"></i>
                     </div>
                     <div
-                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        class="w-16 h-16 bg-firm-navy text-firm-gold rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300 shadow-lg">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Investment Planning</h3>
@@ -216,13 +220,13 @@
                 </div>
 
                 <div onclick="openModal('legal')"
-                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden">
+                    class="group p-8 border-t-4 border-slate-200 bg-white shadow-md hover:shadow-2xl hover:-translate-y-2 hover:border-firm-gold transition-all duration-300 cursor-pointer relative overflow-hidden rounded-lg">
                     <div
-                        class="absolute top-0 right-0 p-4 text-slate-100 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
+                        class="absolute top-0 right-0 p-4 text-slate-200 group-hover:text-firm-gold/10 transition transform scale-150 duration-500">
                         <i class="fas fa-gavel text-6xl"></i>
                     </div>
                     <div
-                        class="w-12 h-12 bg-slate-50 text-firm-navy rounded-full flex items-center justify-center text-xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300">
+                        class="w-16 h-16 bg-firm-navy text-firm-gold rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-firm-gold group-hover:text-firm-navy transition-colors duration-300 shadow-lg">
                         <i class="fas fa-gavel"></i>
                     </div>
                     <h3 class="text-xl font-bold text-firm-navy mb-2 font-serif">Legal & Tax Advisory</h3>
@@ -233,6 +237,63 @@
                         View Details <i
                             class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
                     </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-24 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <p class="text-firm-gold font-bold uppercase tracking-widest text-xs mb-3">The Roadmap</p>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-firm-navy">From Uncertainty to Security</h2>
+            </div>
+
+            <div class="relative grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="hidden md:block absolute top-12 left-20 right-20 h-1 bg-slate-200 -z-0"></div>
+
+                <div class="relative z-10 text-center group">
+                    <div
+                        class="w-24 h-24 mx-auto bg-firm-navy border-4 border-white rounded-full flex items-center justify-center text-3xl text-firm-gold shadow-xl group-hover:scale-110 group-hover:bg-firm-gold group-hover:text-firm-navy transition-all duration-500 mb-8 relative">
+                        <i class="fas fa-comments"></i>
+                        <div
+                            class="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center text-firm-navy font-bold text-sm border border-slate-200 shadow-sm">
+                            1</div>
+                    </div>
+                    <h4 class="text-xl font-bold text-firm-navy mb-4">Discovery Chat</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed max-w-xs mx-auto px-2 font-medium">
+                        We sit down (or Zoom) to map out your current assets, liabilities, and family goals. No sales
+                        pitch yet.
+                    </p>
+                </div>
+
+                <div class="relative z-10 text-center group">
+                    <div
+                        class="w-24 h-24 mx-auto bg-firm-navy border-4 border-white rounded-full flex items-center justify-center text-3xl text-firm-gold shadow-xl group-hover:scale-110 group-hover:bg-firm-gold group-hover:text-firm-navy transition-all duration-500 mb-8 relative">
+                        <i class="fas fa-file-contract"></i>
+                        <div
+                            class="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center text-firm-navy font-bold text-sm border border-slate-200 shadow-sm">
+                            2</div>
+                    </div>
+                    <h4 class="text-xl font-bold text-firm-navy mb-4">Custom Strategy</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed max-w-xs mx-auto px-2 font-medium">
+                        We design a structure using Trusts, Wills, and Insurance that specifically closes your risk
+                        gaps.
+                    </p>
+                </div>
+
+                <div class="relative z-10 text-center group">
+                    <div
+                        class="w-24 h-24 mx-auto bg-firm-navy border-4 border-white rounded-full flex items-center justify-center text-3xl text-firm-gold shadow-xl group-hover:scale-110 group-hover:bg-firm-gold group-hover:text-firm-navy transition-all duration-500 mb-8 relative">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <div
+                            class="absolute -top-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center text-firm-navy font-bold text-sm border border-slate-200 shadow-sm">
+                            3</div>
+                    </div>
+                    <h4 class="text-xl font-bold text-firm-navy mb-4">Lifetime Care</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed max-w-xs mx-auto px-2 font-medium">
+                        We handle the paperwork, the legal stamping, and the annual reviews. You just live your life.
+                    </p>
                 </div>
             </div>
         </div>
